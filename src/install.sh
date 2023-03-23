@@ -15,7 +15,7 @@ curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/do
 rm cookie
 
 conda init
-conda create -n mediqa-teddysum
+conda create -n mediqa-teddysum-env
 
 source /opt/conda/etc/profile.d/conda.sh
 conda activate mediqa-teddysum-env
