@@ -1,1 +1,1 @@
-conda activate korean_baseline
+conda activate mediqa-teddysum
