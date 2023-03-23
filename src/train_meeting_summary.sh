@@ -1,0 +1,16 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python dialogLED_base_sum.py \
+  --train_data ../data/meeting_summarization_dataset-main/AMI_process/data/model_input/train.csv \
+  --train_data2 ../data/meeting_summarization_dataset-main/AMI_process/data/model_input/valid.csv \
+  --dev_data ../data/meeting_summarization_dataset-main/AMI_process/data/model_input/test.csv \
+  --train_data3 ../data/meeting_summarization_dataset-main/ICSI_process/data/model_input/train.csv \
+  --dev_data2 ../data/meeting_summarization_dataset-main/ICSI_process/data/model_input/valid.csv \
+  --base_model MingZhong/DialogLED-large-5120 \
+  --do_train \
+  --do_eval \
+  --learning_rate 2e-5 \
+  --eps 1e-8 \
+  --num_train_epochs 80 \
+  --model_path /root/data/saved_models/dialogLED_finetuned_to_meeting_0317/ \
+  --batch_size 4 \
+  --max_src_len 5120 \
+  --max_tgt_len 1024

@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python dialogLED_prompt_base_sum_by_section.py \
+  --train_data ../data/TaskB/TaskB-TrainingSet.csv \
+  --dev_data ../data/TaskB/TaskB-ValidationSet.csv \
+  --base_model MingZhong/DialogLED-large-5120 \
+  --do_train \
+  --do_eval \
+  --learning_rate 2e-5 \
+  --eps 1e-8 \
+  --num_train_epochs 80 \
+  --model_path /root/data/saved_models/dialogLED_prompt_base_finetuned_to_clinic_0320/ \
+  --batch_size 4 \
+  --max_src_len 5120 \
+  --max_tgt_len 1024
