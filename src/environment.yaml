@@ -1,4 +1,4 @@
-name: korean_baseline
+name: mediqa-teddysum-env
 channels:
   - conda-forge
   - pytorch
