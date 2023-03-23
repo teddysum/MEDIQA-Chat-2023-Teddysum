@@ -16,3 +16,10 @@ rm cookie
 
 conda init
 conda create -n mediqa-teddysum
+
+python3 -m venv evalvenv
+source evalvenv/bin/activate
+pip install -r requirements.txt
+conda install pandas
+conda install pytorch torchvision torchaudio -c pytorch
+conda install transformers
